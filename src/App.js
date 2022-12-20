@@ -9,6 +9,10 @@ import { Helmet } from "react-helmet";
 import './App.css';
 
 function App() {
+  const [currentTab, handleTabChange] = useState("about");
+}
+
+function App() {
   return (
     <div className="App">
       <header className="App-header">
