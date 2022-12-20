@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import Header from "../src/components/Header"
-import About from "../src/components/About";
+import About from "./components/Resume";
 import Contact from "../src/components/Contact";
 import Portfolio from "../src/components/Portfolio";
-import Resume from "../src/components/Resume";
+import Resume from "./components/About";
 import Footer from "../src/components/Footer";
 import { Helmet } from "react-helmet";
 import './App.css';
