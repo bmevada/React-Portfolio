@@ -65,6 +65,8 @@ function Contact() {
                         <a href="mailto://mevada87@gmail.com">
                             mevada@gmail.com
                         </a>
+                        <br />
+                        Linkedin: <a href="https://www.linkedin.com/in/mbhavika"></a>
                     </address>
                     <p>
                         <strong>I look forward to hearing from you!</strong>
