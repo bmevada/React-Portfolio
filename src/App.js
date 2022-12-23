@@ -29,22 +29,22 @@ const renderTab = () => {
 
 function App() {
   const [currentTab, handleTabChange] = useState("about");
+
+
+  return (
+    <>
+      <Helmet>
+        <title>Bhavika's Portfolio | {currentTab} </title>
+      </Helmet>
+      ;
+      <Header
+        currentTab={currentTab}
+        handleTabChange={handleTabChange}
+      ></Header>
+      <main>{renderTab()}</main>
+      <Footer></Footer>
+    </>
+  );
 }
-
-return (
-  <>
-    <Helmet>
-      <title>Bhavika's Portfolio | {currentTab} </title>
-    </Helmet>
-    ;
-    <Header
-      currentTab={currentTab}
-      handleTabChange={handleTabChange}
-    ></Header>
-    <main>{renderTab()}</main>
-    <Footer></Footer>
-  </>
-);
-
 
 export default App;

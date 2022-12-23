@@ -1,10 +1,10 @@
 import React from "react";
-import socialApiImage from "../assets/images/social_API.png";
-import readmeGeneratorImage from "../assets/images/Readme_Generator.png";
-import weatherDashboardImage from "../../assets/images/Weather_Dashboard.png";
-import noteTakerImage from "../../assets/images/Note_Taker.png";
-import teamProfileGeneratorImage from "../../assets/images/Team_Profile_Generator.png";
-import workDaySchedulerImage from "../../assets/images/Work_Day_Scheduler.png";
+import socialApiImage from "../assets/images/socialapi.png";
+import readmeGeneratorImage from "../assets/images/readmegenerator.png";
+import weatherDashboardImage from "../../assets/images/weathedashboard.png";
+import noteTakerImage from "../../assets/images/notettaker.png";
+import teamProfileGeneratorImage from "../../assets/images/teamprofilegenerator.png";
+import workDaySchedulerImage from "../../assets/images/workdayscheduler.png";
 
 
 function Portfolio() {
@@ -30,7 +30,7 @@ function Portfolio() {
                         <div className="job-text">
                             <h4>Social Network API</h4>
                             <p>
-                                About No SQL Challenge
+                            A Node.js command-line application is built which will allow to take in information about employees on a software engineering team and generates an HTML webpage that displays summaries for each person. This application uses Inquirer package v8.2.4, JEST, html, JavaScript, CSS powered by jQuery and Bootstrap.
                             </p>
                         </div>
                     </div>
@@ -86,7 +86,7 @@ function Portfolio() {
                                 <img
                                     className="my-2"
                                     style={{ width: "100%" }}
-                                    alt="Note_Taker"
+                                    alt="Note Taker"
                                 />
                             </a>
                         </div>
@@ -102,19 +102,19 @@ function Portfolio() {
                 <div className="job">
                     <div className="job-info">
                         <div className="job-img">
-                            <a href="https://github.com/bmevada/Weather-Forecast-Dashboard">
+                            <a href="https://github.com/bmevada/Team-Profile-Generator.git">
                                 {" "}
                                 <img
                                     className="my-2"
                                     style={{ width: "100%" }}
-                                    alt="Weather_Dashboard"
+                                    alt="Team Profile Generator"
                                 />
                             </a>
                         </div>
                         <div className="job-text">
-                            <h4>Weather Dashboard</h4>
+                            <h4>Team Profile Generator</h4>
                             <p>
-                                Weather Dashboard - Using Server-Side APIs{" "}
+                            A Node.js command-line application is built which will allow to take in information about employees on a software engineering team and generates an HTML webpage that displays summaries for each person. This application uses Inquirer package v8.2.4, JEST, html, JavaScript, CSS powered by jQuery and Bootstrap.{" "}
                             </p>
                         </div>
                     </div>
