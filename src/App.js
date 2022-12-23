@@ -10,25 +10,25 @@ import './App.css';
 
 // Render various buttons 
 
-const renderTab = () => {
-  if (currentTab === "About") {
-    return <About/>;
-  }
-  if (currentTab === "Contact") {
-    return <Contact/>;
-  }
-  if (currentTab === "Portfolio") {
-    return <Portfolio/>;
-  }
-  if (currentTab === "Resume") {
-    return <Resume/>;
-  }
-  return <About/>;
-};
-
 
 function App() {
-  const [currentTab, handleTabChange] = useState("about");
+  const [currentTab, setTabChange] = useState("About");
+  const renderTab = () => {
+    if (currentTab === "About") {
+      return <About />;
+    }
+    if (currentTab === "Contact") {
+      return <Contact />;
+    }
+    if (currentTab === "Portfolio") {
+      return <Portfolio />;
+    }
+    if (currentTab === "Resume") {
+      return <Resume />;
+    }
+    return <About />;
+  };
+  const handlePageChange = (page) => setTabChange (page);
 
 
   return (
@@ -39,10 +39,10 @@ function App() {
       ;
       <Header
         currentTab={currentTab}
-        handleTabChange={handleTabChange}
+        handlePageChange={handlePageChange}
       ></Header>
       <main>{renderTab()}</main>
-      <Footer></Footer>
+      <Footer/>
     </>
   );
 }
