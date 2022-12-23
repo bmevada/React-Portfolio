@@ -8,21 +8,43 @@ import Footer from "../src/components/Footer";
 import { Helmet } from "react-helmet";
 import './App.css';
 
+// Render various buttons 
+
+const renderTab = () => {
+  if (currentTab === "About") {
+    return <About />;
+  }
+  if (currentTab === "Contact") {
+    return <Contact />;
+  }
+  if (currentTab === "Portfolio") {
+    return <Portfolio />;
+  }
+  if (currentTab === "Resume") {
+    return <Resume />;
+  }
+  return <About />;
+};
+
+
 function App() {
   const [currentTab, handleTabChange] = useState("about");
 }
 
-function App() {
-  return (
-    <div>
-      <main>
-        <About>
+return (
+  <>
+    <Helmet>
+      <title>Bhavika's Portfolio | {currentTab} </title>
+    </Helmet>
+    ;
+    <Header
+      currentTab={currentTab}
+      handleTabChange={handleTabChange}
+    ></Header>
+    <main>{renderTab()}</main>
+    <Footer></Footer>
+  </>
+);
 
-        </About>
-      </main>
-
-    </div>
-  );
-}
 
 export default App;
