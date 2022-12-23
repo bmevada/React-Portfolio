@@ -12,18 +12,18 @@ import './App.css';
 
 const renderTab = () => {
   if (currentTab === "About") {
-    return <About />;
+    return <About/>;
   }
   if (currentTab === "Contact") {
-    return <Contact />;
+    return <Contact/>;
   }
   if (currentTab === "Portfolio") {
-    return <Portfolio />;
+    return <Portfolio/>;
   }
   if (currentTab === "Resume") {
-    return <Resume />;
+    return <Resume/>;
   }
-  return <About />;
+  return <About/>;
 };
 
 
