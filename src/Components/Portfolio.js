@@ -15,21 +15,21 @@ function Portfolio() {
             name:"Professional-README-Generator",
             github:"https://github.com/bmevada/Professional-README-Generator",
             deployed: "https://github.com/bmevada/Professional-README-Generator",
-            description:"Node.js Challenge: Professional README Generator."
+            description:"Node.js Challenge: Professional README Generator.A command-line application has been created using Node JS and Inquirer. The application has pre-filled data which allows the user to create a README doc swiftly without missing crucial information."
 
         },
         {
             name:"Weather-Forecast-Dashboard",
             github:"https://github.com/bmevada/Weather-Forecast-Dashboard/",
             deployed: "https://bmevada.github.io/Weather-Forecast-Dashboard/",
-            description: "Weather Dashboard - Using Server-Side APIs."
+            description: "Weather Dashboard - Using Server-Side APIs. A weather forecast dashboard application has been created to allow the user to view the current weather conditions of the given city and also the future."
 
         },
         {
             name:"Note-Taker",
             github: "https://github.com/bmevada/Note-Taker/",
             deployed: "https://github.com/bmevada/Note-Taker/",
-            description: "Express js Challenge"
+            description: "Express js Challenge. An application called Note Taker has been created to allow the user to write, save and delete notes. The application uses an Express.js back end and will save, retrieve and remove note data from a JSON file. The applications front end was already created. The back end of the application was built and connected to the front end, and deployed the entire application to Heroku."
 
         },
         {
