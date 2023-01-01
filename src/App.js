@@ -1,17 +1,16 @@
 import React, { useState } from "react";
-import Header from "./Components/Header";
-import Page from "./Components/Page";
-import Nav from "./Components/Navigation";
+import Header from "./components/Header";
+import Page from "./components/PageContent";
+import Nav from "./components/Navigation";
 // import About from "./components/About";
 // import Contact from "./components/Contact";
 // import Portfolio from "./components/Portfolio";
 // import Resume from "./components/Resume";
-import Footer from "./Components/Footer";
+import Footer from "./components/Footer";
 import { Helmet } from "react-helmet";
 import './App.css';
 
 // Render various buttons 
-
 
 function App() {
   const [pages] = useState([
