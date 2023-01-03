@@ -4,7 +4,7 @@ function Project ({project}) {
 return (
     <div className="project" key={name}>
         <img
-        src={require(`../../src/assets/images/${name}.png`)} 
+        src={require(`../assets/images/${name}.png`)} 
         alt={name}
         className ="project-bg" />
        <div className="project-text">

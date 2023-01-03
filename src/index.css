@@ -34,7 +34,7 @@ code {
 
 /* Main Landing Page */
 .hero {
-  background-image: url("../src/assets/");
+  background-image: url("../assets/cover");
   /* Add background image */
   background-size: cover;
   background-position: center;
@@ -84,7 +84,7 @@ header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background-image: url("../src/assets/cover/");
+  background-image: url("../assets/cover/");
   /* Add background image */
   background-size: cover;
   background-position: center;
