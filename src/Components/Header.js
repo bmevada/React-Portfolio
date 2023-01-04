@@ -19,8 +19,8 @@ function Header(props) {
           </div> */}
         </header>
       </section>
-      <section class="hero">
-        <div class="hero-cta">
+      <section className="hero">
+        <div className="hero-cta">
 
           <h2>Welcome to my Coding Bootcamp Portfolio</h2>
           <p>

@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import Header from "./components/Header";
-import Page from "./components/PageContent";
-import Nav from "./components/Navigation";
+import Page from "./components/Page";
+
+import Navigation from "./components/Navigation";
 // import About from "./components/About";
 // import Contact from "./components/Contact";
 // import Portfolio from "./components/Portfolio";
@@ -50,11 +51,11 @@ function App() {
       </Helmet>
       ;
       <Header>
-        <Nav
+        <Navigation
           pages={pages}
           setTabChange={setTabChange}
           currentTab={currentTab}
-        ></Nav>
+        ></Navigation>
       </Header>
       <main>
         <Page currentTab={currentTab}></Page>

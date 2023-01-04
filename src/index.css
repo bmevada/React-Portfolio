@@ -134,6 +134,7 @@ header nav ul li a {
   -o-transition: all 1s ease;
   -ms-transition: all 1s ease;
   transition: all 1s ease;
+  color: black;
 }
 
 header nav ul li a:hover {

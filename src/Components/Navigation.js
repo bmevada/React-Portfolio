@@ -1,10 +1,11 @@
 import React, { useEffect } from 'react';
 import { capitalizeFirstLetter } from '../../src/utils/helpers';
 
-function Nav(props) {
+function Navigation(props) {
     const {
+        pages = [],
         currentTab,
-        handleTabChange,
+        setTabChange,
 
     } = props;
 
@@ -15,47 +16,23 @@ function Nav(props) {
     //Add links to the navigation bar - About; Portfolio; Contact and Resume
     return (
         <nav>
-            <ul className="nav nav-tabs">
-                <li className="nav-item">
-                    <a
-                        href="#about"
-                        onClick={() => handleTabChange('About')}
-                        className={currentTab === 'About' ? 'nav-link active' : 'nav-link'}
+            <ul className="flex-row">
+                {pages.map((Page) => (
+                    <li
+                        className={`mx-5 ${currentTab.name === Page.name && 'navActive'
+                            }`}
+                        key={Page.name}
                     >
-                        About
-                    </a>
-                </li>
-                <li className="nav-item">
-                    <a
-                        href="#portfolio"
-                        onClick={() => handleTabChange('Portfolio')}
-                        className={currentTab === 'Portfolio' ? 'nav-link active' : 'nav-link'}
-                    >
-                        Portfolio
-                    </a>
-                </li>
-                <li className="nav-item">
-                    <a
-                        href="#contact"
-                        onClick={() => handleTabChange('Contact')}
-                        className={currentTab === 'Contact' ? 'nav-link active' : 'nav-link'}
-                    >
-                        Contact
-                    </a>
-                </li>
-                <li className="nav-item">
-                    <a
-                        href="#resume"
-                        onClick={() => handleTabChange('Resume')}
-                        className={currentTab === 'Resume' ? 'nav-link active' : 'nav-link'}
-                    >
-                        Resume
-                    </a>
-                </li>
+                        <span
+                            onClick={() => setTabChange(Page)}
+                        >
+                            {capitalizeFirstLetter(Page.name)}
+                        </span>
+                    </li>
+                ))}
             </ul>
         </nav>
-
     );
 }
 
-export default Nav;
+export default Navigation;
