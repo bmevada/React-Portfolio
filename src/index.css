@@ -1,8 +1,15 @@
+/* Margins */
+* {
+  /* margin: 555;
+  padding: 555; */
+  box-sizing: border-box;
+}
+
 /* Body */
 body {
-  margin: 0;
-  color: #D5F2EA;
-  margin: 0;
+  /* margin: 0; */
+  color: #151515;
+  /* margin: 0; */
   min-height: 100vh;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,8 +17,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+main {
+  margin: 0 auto;
+  max-width: 90%;
+  padding: 50px 30px;
+}
 
-/* Code */ 
+/* Code */
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -33,20 +45,21 @@ code {
 }
 
 /* Main Landing Page */
-/* .hero {
-  background-image: url("../images/cover"); */
+.hero {
+  /* background-image: url("../src/assets/images/Professional-README-Generator.png");  */
   /* Add background image */
   /* background-size: cover;
-  background-position: center;
+  background-position: center; */
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   align-items: flex-start;
-  background-attachment: fixed;
-  background-position: 80%;
-} */
+  /* background-attachment: fixed;
+  background-position: 80%; */
+}
+
 .hero-cta {
-  width: 35%;
+  width: 88%;
   text-align: center;
   margin: 3.5%;
   color: beige;
@@ -67,15 +80,11 @@ code {
 }
 
 
-/* Margins */
-* {
-  margin: 555;
-  padding: 555;
-  box-sizing: border-box;
-}
+
 
 /* Header */
 header {
+  margin: 0;
   padding: 20px 35px;
   background-color: beige;
   display: flex;
@@ -84,12 +93,12 @@ header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  /* background-image: url("../images/cover/"); */
+  /* background-image: url("../src/assets/cover/"); */
   /* Add background image */
-  background-size: cover;
+  /* background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-position: 80%;
+  background-position: 80%; */
   z-index: 9999;
 
 }
@@ -109,11 +118,11 @@ header a {
   color: navy;
 }
 
-header nav {
+nav {
   margin: 7px 0;
 }
 
-header nav ul {
+nav ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -122,11 +131,17 @@ header nav ul {
 
 }
 
+nav ul li {
+  margin-right: 10px;
+}
+
+
 /* Button Style in header*/
-header nav ul li a {
+nav ul li a {
   padding: 10px 15px;
   font-weight: normal;
   font-size: 1.60vw;
+
   text-shadow: 0 0 10px grey;
   border-radius: 15px;
   -webkit-transition: all 1s ease;
@@ -134,15 +149,19 @@ header nav ul li a {
   -o-transition: all 1s ease;
   -ms-transition: all 1s ease;
   transition: all 1s ease;
-  color: black;
 }
 
-header nav ul li a:hover {
+nav ul li:hover {
   background: #0c767a;
   color: beige;
   border-radius: 15px;
   text-shadow: none;
+  cursor: pointer;
 }
+
+/* main h2 {
+  margin-left: 3%;
+} */
 
 /* Intro text */
 
@@ -180,9 +199,63 @@ header nav ul li a:hover {
   color: #0c767a;
   font-size: 20px;
 }
+.styleResume {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  font-size: 1.5rem;
+}
+.project {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+  margin: 30px;
+}
+
+.project-bg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* .project-text {
+    color: var(--secondary);
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 50px;
+    z-index: 900;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+} */
+
+/* .project-text:hover {
+  background-color: var(--alpha);
+  opacity: 1;
+  border: 10px solid var(--secondary);
+}
+
+.project-text h3 {
+  font-size: 1.5rem;
+}
+
+.project-text a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--dark);
+  transition: all .3s ease-in-out;
+}
+
+.project-text a:hover {
+  color: var(--darker);
+} */
 
 /* Contact me query form*/
-#contact-form{
+#contact-form {
   background: beige;
 }
 
@@ -194,12 +267,18 @@ header nav ul li a:hover {
   color: beige;
 }
 
-.contact-info {
+/* .contact-info {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap; */
+/* } */
+/* .formContact {
+  display: flex;
+  align-items: center; */
 
+  /* justify-content: center; */
+/* } */ */
 .contact-form {
   padding-right: 10%;
 }
@@ -333,7 +412,7 @@ footer a:hover {
 }
 
 .logo:hover {
-  color:navy;
+  color: navy;
   opacity: 0.5;
   transition: .5s ease;
 }
@@ -441,5 +520,3 @@ footer a:hover {
 .column-text ul li {
   list-style: none;
 }
-
-

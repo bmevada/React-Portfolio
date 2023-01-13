@@ -1,10 +1,17 @@
 import React from "react";
+
+
+
 function Project ({project}) {
+    
     const {name, github, deployed, description} = project;
+
+
+
 return (
     <div className="project" key={name}>
         <img
-        src={require(`../assets/images/${name}.png`)} 
+         src={require(`../assets/images/${name}.png`)} 
         alt={name}
         className ="project-bg" />
        <div className="project-text">

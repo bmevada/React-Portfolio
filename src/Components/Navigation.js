@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
 import { capitalizeFirstLetter } from '../../src/utils/helpers';
 
-function Navigation(props) {
-    const {
-        pages = [],
+function Nav(props) {
+
+  const  {
+        pages=[],
         currentTab,
         setTabChange,
 
@@ -14,25 +15,26 @@ function Navigation(props) {
     }, [currentTab]);
 
     //Add links to the navigation bar - About; Portfolio; Contact and Resume
-    return (
+    return (    
         <nav>
-            <ul className="flex-row">
-                {pages.map((Page) => (
-                    <li
-                        className={`mx-5 ${currentTab.name === Page.name && 'navActive'
-                            }`}
-                        key={Page.name}
-                    >
-                        <span
-                            onClick={() => setTabChange(Page)}
-                        >
-                            {capitalizeFirstLetter(Page.name)}
-                        </span>
-                    </li>
-                ))}
-            </ul>
+          <ul className="flex-row">
+            {pages.map((Page) => (
+              <li
+                className={`mx-5  ${
+                  currentTab.name === Page.name && 'navActive'
+                  }`}
+                key={Page.name}
+              >
+                <span
+                  onClick={() => setTabChange(Page)}
+                >
+                  {capitalizeFirstLetter(Page.name)}
+                </span>
+              </li>
+            ))}
+          </ul>
         </nav>
     );
-}
+  }
 
-export default Navigation;
+export default Nav;

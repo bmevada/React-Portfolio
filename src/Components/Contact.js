@@ -42,11 +42,11 @@ function Contact() {
 
     return (
         <div>
-            <div className="flex-row">
+            {/* <div className="flex-row">
                 <h2 className="section-title secondary-border">Contact Me</h2>
-            </div>
+            </div> */}
 
-            <div className="contact-info">
+            <div className="flex-row contact-info">
                 <div>
                     <h3>Hello {name}</h3>
                     <p>You can contact me via:</p>
@@ -76,7 +76,7 @@ function Contact() {
                 </div>
             </div>
 
-            <section>
+            <section className='formContact'>
                 <form id="contact-form" onSubmit={handleSubmit}>
                     <div>
                         <label htmlFor="name">Name:</label>
